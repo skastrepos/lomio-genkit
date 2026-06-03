@@ -1,0 +1,40 @@
+name: Bug report / 缺陷报告
+description: Report a reproducible problem. / 报告可复现的问题。
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Lomio GenKit.
+
+        感谢你帮助改进 Lomio GenKit。
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary / 摘要
+      description: What happened? / 发生了什么？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction / 复现步骤
+      description: List the steps needed to reproduce the issue. / 请列出复现步骤。
+      placeholder: |
+        1. Run pnpm dev
+        2. Open ...
+        3. Click ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / 预期行为
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 环境
+      placeholder: Node, pnpm, OS, browser

@@ -1,0 +1,29 @@
+name: Feature request / 功能请求
+description: Suggest a focused improvement. / 提议一个明确改进。
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / 问题
+      description: What user problem should this solve? / 这要解决什么用户问题？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal / 方案
+      description: What should Lomio GenKit do? / Lomio GenKit 应该如何处理？
+    validations:
+      required: true
+  - type: dropdown
+    id: roadmap
+    attributes:
+      label: Roadmap area / 路线图领域
+      options:
+        - V0.1 skeleton / V0.1 骨架
+        - CLI scaffolding / CLI 脚手架
+        - Provider adapters / Provider 适配器
+        - SaaS basics / SaaS 基础
+        - Later roadmap / 后续路线图

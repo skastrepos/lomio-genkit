@@ -1,0 +1,22 @@
+{
+  "name": "@lomio/core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Core application composition helpers for Lomio GenKit.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@lomio/ai": "workspace:*"
+  }
+}
